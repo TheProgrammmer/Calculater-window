@@ -115,18 +115,14 @@ $('.first-animate').on('mousedown',function(){
 $('html,body').on('mouseup',function(){
 	$('html,body').unbind('mousemove',move1());
 });
-function sending_ajax(arr){
-	// let json_arr = JSON.stringify(arr);
-	alert();
+function sending_ajax(message){
 	$.ajax({
-			type: "post",
+			type: "POST",
 			url: "../send.php",
-			// dataType: 'json',
-			// cache: false,
-			data: {value: arr}
-	}).done(function(e){
-		alert();
-		console.log(e);
+   			data: {from_ajax: message},
+   			success: function(data) {
+               	    console.log(data);
+            }
 	});
 }
 function pull_value() {
@@ -143,40 +139,29 @@ function pull_value() {
 		if($('.checkbox').eq(2).attr('class') == 'checkbox arrow-img'){
 			checkbox3 = "С энергосберегающим стеклопакетом";
 		}
-		let arr = [
-			$('.selected_menu a').text(),
-			$('.selected_window .wind-type-name').text(),
-			$('.selected_open-type').attr('value'),
-			$('select option:selected').text(),
-			checkbox1,
-			checkbox2,
-			checkbox3,
-			$('.size').eq(0).val(),
-			$('.size').eq(1).val(),
-		];
-		sending_ajax(arr);
+		let message = 
+			$('.selected_menu a').text()+', '+
+			$('.selected_window .wind-type-name').text()+', '+
+			$('.selected_open-type').attr('value')+', '+
+			$('select option:selected').text()+', '+
+			checkbox1+', '+
+			checkbox2+', '+
+			checkbox3+', '+
+			$('.size').eq(0).val()+', '+
+			$('.size').eq(1).val();
+		sending_ajax(message);
 	}
 	else {
 		let checkbox = "Без фурнитуры";
 		if($('.checkbox').attr('class') == 'checkbox arrow-img'){
 			checkbox = "С фурнитурой";
 		}
-		let arr = [
-			$('.selected_menu a').text(),
-			$('.selected_window .wind-type-name').text(),
-			$('.selected_open-type').attr('value'),
-			$('select option:selected').eq(0).text(),
-			checkbox,
-			$('select option:selected').eq(1).text(),
-			$('.size').eq(0).val(),
-			$('.size').eq(1).val(),
-		];
-		sending_ajax(arr);
+		let message = $('.selected_menu a').text()+', '+$('.selected_window .wind-type-name').text()+', '+$('.selected_open-type').attr('value')+', '+$('select option:selected').eq(0).text()+', '+checkbox+', '+$('select option:selected').eq(1).text()+', '+$('.size').eq(0).val()+', '+$('.size').eq(1).val();
+		sending_ajax(message);
 	}
 }
 $('.bid').click(function(){
-	// pull_value();
-	alert();
+	pull_value();
 	$('.black').css({'display': 'block'});
 	$('.pop-up').css({'display': 'block'});
 	$('.black').click(function(){

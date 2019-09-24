@@ -1,9 +1,7 @@
 <?php
 <<<<<<< HEAD
-
-// $arr = json_decode(($_POST['value']));
-$arr = $_POST['value'];
-echo $arr[0];
+$message = $_POST['from_ajax'];
+mail('Ваш емайл','Хорактеристики окна', $message);
 =======
 $to      = 'ira email@';
 $subject = 'Хорактеристики окна';
