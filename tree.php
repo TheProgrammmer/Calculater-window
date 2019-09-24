@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="first" class="tree">
+		<div id="menu">
+<<<<<<< HEAD:tree.php
+			<div class="menu"><span><a href="index.php">Калькулятор пластиковых окон</a></span></div>
+			<div class="menu selected_menu"><a href="tree.php">Калькулятор деревянных окон</a></div>
+=======
+			<div class="menu"><a href="index.html">Калькулятор пластиковых окон</a></div>
+			<div class="menu selected_menu"><a href="tree.html">Калькулятор деревянных окон</a></div>
+>>>>>>> 57162a8a453d42bd65ff452f51268648daf2cc6f:tree.html
+		</div>
+		<div class="window__props">
+			<div class="window__props-items">
+					<div class="num">
+						<span>1</span>
+					</div>
+					<label class="type-name">
+						Тип деревянных окон
+					</label>
+				<div class="window__props-types">
+					<div class="wind-type">
+						<span class="wind-type-name">Одностворчатое</span>
+						<img src="img/window-1.png">
+					</div>
+					<div class="wind-type">
+						<span class="wind-type-name">Двухстворчатое</span>
+						<img src="img/window-2.png">
+					</div>
+					<div class="wind-type">
+						<span class="wind-type-name">Трехстворчатое	</span>
+						<img src="img/window-3.png">
+					</div>
+					<div class="wind-type">
+						<span class="wind-type-name">Балконная дверь</span>
+						<img src="img/window-4.png">
+					</div>
+				</div>
+				<div class="num">
+					<label>2</label>
+				</div>
+				<label class="type-name">
+				Вид открытия
+				</label>
+			</div>
+			<!------------------------->
+			<<div class="open-1 open">
+					<div value="поворотно" class="open-type selected_open-type"><img src="img/open-1-1.png"></div>
+					<div value="поворотно-откидное" class="open-type"><img src="img/open-1-2.jpg"></div>
+					<div value="глухое" class="open-type"><img src="img/open-1-3.jpg"></div>
+			</div>
+			<div class="open-2 open">
+					<div value="глухое,поворотное" class="open-type"><img src="img/open-2-1.png"></div>
+					<div value="глухое,поворотно-откидное" class="open-type"><img src="img/open-2-2.png"></div	>
+					<div value="поворотное,поворотное" class="open-type"><img src="img/open-2-3.png"></div>
+					<div value="поворотное,поворотно-откидное" class="open-type"><img src="img/open-2-4.png"></div>
+			</div>
+			<div class="open-3 open">
+					<div value="глухое,поворотное,глухое" class="open-type"><img src="img/open-3-1.jpg"></div>
+					<div value="глухое,поворотно-откидое,глухое" class="open-type"><img src="img/open-3-2.jpg"></div>
+					<div value="поворотное,глухое,поворотное" class="open-type"><img src="img/open-3-3.jpg"></div>
+					<div value="поворотное,глухое,поворотно-откидое" class="open-type"><img src="img/open-3-4.jpg"></div>
+					<div value="поворотное,поворотное,поворотное" class="open-type"><img src="img/open-3-5.jpg"></div>
+					<div value="поворотное,поворотно-откидое,поворотное" class="open-type"><img src="img/open-3-6.jpg"></div>
+					<div value="поворотно-откидое,поворотное,поворотно-откидное," class="open-type"><img src="img/open-3-7.jpg"></div>
+			</div>
+			<div class="open-4 open">
+					<div value="поворотная" class="open-type"><img src="img/open-4-1.jpg"></div>
+					<div value="поворотно-откидная" class="open-type"><img src="img/open-4-2.jpg"></div>
+			</div>
+			<div class="window__props-size">
+				<!--------------------------->
+				<div class="window__props-size-hw">
+					<div class="num34">
+						<label>3</label>
+					</div>
+					<label class="type-name">
+						Характеристики окна
+					</label>
+					<div class="prof__sist-1 prof__sist">
+						<div class="prof__sist-items">
+							<span>Профильная система</span>
+						</div><select>
+						<option>Сосна</option>
+						<option>Лиственница</option>
+						<option>Бинтангир (красное дерево)</option>
+						<option>Дуб</option>
+						</select>
+					</div>
+<<<<<<< HEAD:tree.php
+					<div class="prof__sist-props">
+						<span class="prof__sist-props-items">Противавзломная фурнитура</span><div class="checkbox"></div>
+						<span class="prof__sist-props-items">Аллюминовый оклад</span><div class="checkbox"></div>
+						<span class="minus1 prof__sist-props-items">Энергосберегающий стеклопакет</span><div class="checkbox"></div>
+=======
+					<div class="prof__sist-props prof__wood">
+						<div class='prof__sist-props-options'>
+							<div class='prof__sist-props-option'>
+								<span>Простивавзломная фурнитура</span>
+								<div class="checkbox"></div>
+							</div>
+							<div class='prof__sist-props-option'>
+								<span>Аллюминовый оклад</span>
+								<div class="checkbox"></div>
+							</div>
+						</div>
+						<div class='prof__sist-props-option'>
+							<span>Энергосберегающий стеклопайкет</span>
+							<div class="checkbox"></div>
+						</div>
+>>>>>>> 57162a8a453d42bd65ff452f51268648daf2cc6f:tree.html
+					</div>
+					<div class="prof__sist">
+						<div class="prof__sist-items">
+							<span class="prof__sist-props-items">Ширина окна (мм)</span>
+						</div>
+						<input class="size" type="number">
+					</div>
+					<div class="prof__sist">
+						<div class="prof__sist-items">
+							<span class="prof__sist-props-items">Высота окна (мм)</span>
+						</div>
+						<input class="size" type="number">
+					</div>
+				</div>
+				<!--------------------------->
+				
+
+				<div class="window__props-size-image">
+					<div class="num34 second34">
+						<label>4</label>
+					</div>
+					<label class="type-name">
+						Размер окна
+					</label>
+					<div class="windowsize">
+						<div class="wsize">
+							<img class="big-window" src="img/big-1.jpg">
+						</div>
+						<span class="size-value1 size-value">0</span>
+						<div class="first-size-animate size-animate">
+							<div class="first-animate animate">
+								<div class="move-btn-2"></div>
+								<div class="circle"></div>
+								<div class="line1 line"></div>
+								<div class="circle1-2 circle"></div>
+							</div>	
+						</div>
+						<div class="size-animate">
+							<div class="animate2 animate">
+								<div class="move-btn"></div>
+								<div class="circle"></div>
+								<div class="line2 line"></div>
+								<div class="circle2 circle"></div>
+								<span class="size-value2 size-value">0</span>
+							</div>	
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="prof__sist-items bid">
+			<span class="prof__sist-props-items">ОСТАВИТЬ ЗАЯВКУ</span>
+		</div>
+	</div>
+
+	<div class="pop-up">
+		<img src="img/x.png">
+		<span>ЗАЯВКА НА РАССЧЕТ</span>
+		<input spelcheck="false" type="text" name="user_name" placeholder="Имя">
+		<input spelcheck="false" type="number" name="phone" placeholder="Ваш телефон">
+		<button>ОТПРАВИТЬ</button>
+	</div>
+	<div class="black"></div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
